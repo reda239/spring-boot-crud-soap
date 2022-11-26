@@ -3,7 +3,7 @@
            xmlns:tns="http://www.crudsoap.com/soapapplication/Interfaces"
            targetNamespace="http://www.crudsoap.com/soapapplication/Interfaces"
            elementFormDefault="qualified">
-    <xs:complexType name="client">
+    <xs:complexType name="clientInfo">
         <xs:sequence>
             <xs:element name="Id" type="xs:long" />
             <xs:element name="nom" type="xs:string" />
@@ -21,7 +21,7 @@
     <xs:element name="addClientRequest">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="client" type="tns:client" />
+                <xs:element name="client" type="tns:clientInfo" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -30,7 +30,7 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="serviceStatus" type="tns:serviceStatus" />
-                <xs:element name="client" type="tns:client" />
+                <xs:element name="client" type="tns:clientInfo" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -45,7 +45,7 @@
     <xs:element name="getClientResponse">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="client" type="tns:client" />
+                <xs:element name="client" type="tns:clientInfo" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -53,7 +53,7 @@
     <xs:element name="updateClientRequest">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="client" type="tns:client" />
+                <xs:element name="client" type="tns:clientInfo" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -65,14 +65,14 @@
         </xs:complexType>
     </xs:element>
 
-    <xs:element name="deleteEmployeeRequest">
+    <xs:element name="deleteClientRequest">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="clientId" type="xs:long" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-    <xs:element name="deleteEmployeeResponse">
+    <xs:element name="deleteClientResponse">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="serviceStatus" type="tns:serviceStatus" />

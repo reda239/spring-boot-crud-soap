@@ -38,7 +38,7 @@ import javax.xml.bind.annotation.XmlType;
     "clientId"
 })
 @XmlRootElement(name = "deleteEmployeeRequest")
-public class DeleteEmployeeRequest {
+public class DeleteClientRequest {
 
     protected long clientId;
 

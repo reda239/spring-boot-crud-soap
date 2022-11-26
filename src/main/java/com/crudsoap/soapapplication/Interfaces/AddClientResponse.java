@@ -38,7 +38,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
     "serviceStatus",
-    "client"
+        "clientInfo"
 })
 @XmlRootElement(name = "addClientResponse")
 public class AddClientResponse {
@@ -46,7 +46,7 @@ public class AddClientResponse {
     @XmlElement(required = true)
     protected ServiceStatus serviceStatus;
     @XmlElement(required = true)
-    protected Client client;
+    protected ClientInfo clientInfo;
 
     /**
      * Gets the value of the serviceStatus property.
@@ -77,11 +77,11 @@ public class AddClientResponse {
      * 
      * @return
      *     possible object is
-     *     {@link Client }
+     *     {@link ClientInfo }
      *     
      */
-    public Client getClient() {
-        return client;
+    public ClientInfo getClient() {
+        return clientInfo;
     }
 
     /**
@@ -89,11 +89,11 @@ public class AddClientResponse {
      * 
      * @param value
      *     allowed object is
-     *     {@link Client }
+     *     {@link ClientInfo }
      *     
      */
-    public void setClient(Client value) {
-        this.client = value;
+    public void setClient(ClientInfo value) {
+        this.clientInfo = value;
     }
 
 }

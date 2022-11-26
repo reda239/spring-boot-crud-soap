@@ -77,11 +77,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DeleteEmployeeRequest }
+     * Create an instance of {@link DeleteClientRequest }
      * 
      */
-    public DeleteEmployeeRequest createDeleteEmployeeRequest() {
-        return new DeleteEmployeeRequest();
+    public DeleteClientRequest createDeleteEmployeeRequest() {
+        return new DeleteClientRequest();
     }
 
     /**
@@ -93,11 +93,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DeleteEmployeeResponse }
+     * Create an instance of {@link DeleteClientResponse }
      * 
      */
-    public DeleteEmployeeResponse createDeleteEmployeeResponse() {
-        return new DeleteEmployeeResponse();
+    public DeleteClientResponse createDeleteEmployeeResponse() {
+        return new DeleteClientResponse();
     }
 
     /**
@@ -109,11 +109,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Client }
+     * Create an instance of {@link ClientInfo }
      * 
      */
-    public Client createClient() {
-        return new Client();
+    public ClientInfo createClient() {
+        return new ClientInfo();
     }
 
 }

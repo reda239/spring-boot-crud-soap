@@ -45,7 +45,7 @@ import javax.xml.bind.annotation.XmlType;
     "cin",
     "address"
 })
-public class Client {
+public class ClientInfo {
 
     @XmlElement(name = "Id")
     protected long id;

@@ -39,7 +39,7 @@ import javax.xml.bind.annotation.XmlType;
     "serviceStatus"
 })
 @XmlRootElement(name = "deleteEmployeeResponse")
-public class DeleteEmployeeResponse {
+public class DeleteClientResponse {
 
     @XmlElement(required = true)
     protected ServiceStatus serviceStatus;
